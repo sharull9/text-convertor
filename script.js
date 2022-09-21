@@ -5,6 +5,11 @@ const button = document.querySelector('#button');
 
 const button2 = document.querySelector('#copyToClipboard');
 
+
+input.addEventListener('focus', ()=>{
+    input.select();
+})
+
 button.addEventListener('click', ()=> {
     let str = input.value;
     let lowerCase = str.toLowerCase().replaceAll('.', '')
