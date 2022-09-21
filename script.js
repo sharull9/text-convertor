@@ -1,9 +1,7 @@
 
 const input = document.querySelector('#value');
 const output = document.querySelector('#output');
-const button = document.querySelector('#button');
-
-const button2 = document.querySelector('#copyToClipboard');
+const button = document.querySelector('#copyToClipboard');
 
 
 input.addEventListener('focus', ()=>{
@@ -18,7 +16,7 @@ input.addEventListener('input', ()=> {
     output.innerText = finalValue;
 })
 
-button2.addEventListener('click', ()=> {
+button.addEventListener('click', ()=> {
     let copyText = output.innerText;
     // copyText.select();
     navigator.clipboard.writeText(copyText);
