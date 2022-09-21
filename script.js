@@ -10,7 +10,7 @@ input.addEventListener('focus', ()=>{
     input.select();
 })
 
-button.addEventListener('click', ()=> {
+input.addEventListener('input', ()=> {
     let str = input.value;
     let lowerCase = str.toLowerCase().replaceAll('.', '')
     let removeComma = lowerCase.replaceAll("'", '-')
