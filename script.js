@@ -4,7 +4,6 @@ function url(){
     const output = main.children[1].children[0];
     const button = main.children[1].children[1];
 
-    console.log(input)
     input.addEventListener('focus', ()=>{
         input.select();
     })
@@ -21,7 +20,6 @@ function url(){
         let copyText = output.innerText;
         // copyText.select();
         navigator.clipboard.writeText(copyText);
-        console.log(copyText)
     })
 }
 
@@ -33,7 +31,6 @@ function upper(){
     const output = main.children[1].children[0];
     const button = main.children[1].children[1];
 
-    console.log(input)
     input.addEventListener('focus', ()=>{
         input.select();
     })
@@ -48,7 +45,6 @@ function upper(){
         let copyText = output.innerText;
         // copyText.select();
         navigator.clipboard.writeText(copyText);
-        console.log(copyText)
     })
 }
 
