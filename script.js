@@ -12,7 +12,14 @@ function url(){
         let str = input.value;
         let lowerCase = str.toLowerCase().replaceAll('.', '')
         let removeComma = lowerCase.replaceAll("'", '-')
-        let finalValue = removeComma.split(" ").join("-");
+        let removeAnd = removeComma.replaceAll(" & ", '-')
+        let removeA1 = removeAnd.replaceAll("à", 'a')
+        let removeA2 = removeA1.replaceAll("á", 'a')
+        let removeE1 = removeA2.replaceAll("è", 'e')
+        let removeE2 = removeE1.replaceAll("é", 'e')
+        let removeU1 = removeE2.replaceAll("ù", 'u')
+        let removeC1 = removeU1.replaceAll("ç", 'c')
+        let finalValue = removeC1.split(" ").join("-");
         output.innerText = finalValue;
     })
     
