@@ -27,6 +27,14 @@ function url(){
         let copyText = output.innerText;
         // copyText.select();
         navigator.clipboard.writeText(copyText);
+        let icon = button.children[0]
+        console.log(icon.innerText);
+        icon.innerText = 'done';
+        const back = () => {
+
+            icon.innerText = "content_copy"
+        }
+        setTimeout(function(){back()}, 1000)
     })
 }
 
@@ -52,6 +60,9 @@ function upper(){
         let copyText = output.innerText;
         // copyText.select();
         navigator.clipboard.writeText(copyText);
+        let icon = button.children[0]
+        console.log(icon.innerText);
+        icon.innerText = 'done';
     })
 }
 
