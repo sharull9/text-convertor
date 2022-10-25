@@ -1,0 +1,11 @@
+{
+    "name": "Text Convertor",
+    "version": "1.0.0",
+    "description": "Convert text to any case",
+    "manifest_version": 3,
+    "author": "Arafatulla",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Text Case Convertor"
+    }
+}
